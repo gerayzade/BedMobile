@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c012c">
+    <TextView
+        android:textSize="27sp"
+        android:textColor="#f5f5f5"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Bed"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Chronometer
+        android:textColor="#f5f5f5"
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/bedTalking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:src="@drawable/bed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+    <ImageView android:id="@+id/end_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/end"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="endTalk" />
+    <TextView android:textSize="14sp"
+        android:textColor="#f5f5f5"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:layout_above="@+id/end_call"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
